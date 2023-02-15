@@ -1,23 +1,31 @@
+// Case
 document.getElementById('case-plus').addEventListener('click', function() {
     const newQuantity = getQuantityInput('case-quantity-input', true)
-    const totalPrice = newQuantity * 59;
-    document.getElementById('item-price').innerText = totalPrice;
+    totalCaseCost(newQuantity)
+    setSubTotal();
+    setTotal()
+
 })
 
 document.getElementById('case-minus').addEventListener('click', function() {
     const newQuantity = getQuantityInput('case-quantity-input', false)
-    const totalPrice = newQuantity * 59;
-    document.getElementById('item-price').innerText = totalPrice;
+    totalCaseCost(newQuantity)
+    setSubTotal()
+    setTotal()
 })
+
+// Phone
 
 document.getElementById('phone-plus').addEventListener('click', function() {
     const newQuantity = getQuantityInput('phone-quantity-input', true)
-    const totalPrice = newQuantity * 1219;
-    document.getElementById('phone-item-price').innerText = totalPrice;
+    totalPhoneCost(newQuantity)
+    setSubTotal()
+    setTotal()
 })
 
 document.getElementById('phone-minus').addEventListener('click', function() {
     const newQuantity = getQuantityInput('phone-quantity-input', false)
-    const totalPrice = newQuantity * 1219;
-    document.getElementById('phone-item-price').innerText = totalPrice;
+    totalPhoneCost(newQuantity)
+    setSubTotal()
+    setTotal()
 })
