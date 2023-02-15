@@ -29,3 +29,9 @@ document.getElementById('phone-minus').addEventListener('click', function() {
     setSubTotal()
     setTotal()
 })
+
+document.getElementById('check-out-btn').addEventListener('click', function() {
+    document.getElementById('sub-total').innerText = '00';
+    document.getElementById('all-cost').innerText = '00';
+    document.getElementById('tax').innerText = '00';
+})
